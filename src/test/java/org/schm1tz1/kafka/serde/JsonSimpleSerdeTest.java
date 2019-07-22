@@ -1,13 +1,11 @@
-package org.schm1tz1.kafkaHelpers;
+package org.schm1tz1.kafka.serde;
 
 import org.json.simple.JSONObject;
 import org.junit.Test;
-import org.schm1tz1.kafkaHelpers.JsonSimpleDeserializer;
-import org.schm1tz1.kafkaHelpers.JsonSimpleSerializer;
 
 import java.util.Arrays;
 
-public class SerDeTest {
+public class JsonSimpleSerdeTest {
 
     @Test
     public void serializerTest() {

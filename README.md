@@ -1,4 +1,2 @@
-# kakfaHelpers
-This project contains some helper tools to be used with kafka and kafka streams.
-It currently includes:
-- Custom SerDe-Class for JSONObjects from JsonSimple
+# JsonSimpleSerde
+This project contains a simple serde for JSONObjects via JsonSimple.
