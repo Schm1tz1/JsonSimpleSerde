@@ -1,4 +1,4 @@
-package org.schm1tz1.kafka.serde;
+package com.github.schm1tz1.kafka.serde;
 
 import org.json.simple.JSONObject;
 import org.junit.Test;
