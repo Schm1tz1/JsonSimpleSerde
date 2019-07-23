@@ -10,10 +10,22 @@ public class JsonSimpleSerializer implements Serializer<JSONObject> {
 
     private static final Logger logger = Logger.getRootLogger();
 
+    /**
+     * Configure this class.
+     * @param configs configs in key/value pairs
+     * @param isKey whether is for key or value
+     */
     public void configure(Map<String, ?> configs, boolean isKey) {
 
     }
 
+    /**
+     * Convert JSONObject into a byte array.
+     *
+     * @param topic topic associated with data
+     * @param data JSONObject
+     * @return serialized bytes
+     */
     public byte[] serialize(String topic, JSONObject data) {
         try {
             if (data == null)
@@ -27,6 +39,11 @@ public class JsonSimpleSerializer implements Serializer<JSONObject> {
         return null;
     }
 
+    /**
+     * Close this serializer.
+     *
+     * This method must be idempotent as it may be called multiple times.
+     */
     public void close() {
 
     }
